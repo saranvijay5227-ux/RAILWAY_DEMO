@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Station - RailStream Admin</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <nav>
+        <a href="index.html" class="logo">🚂 RAILSTREAM (ADMIN)</a>
+    </nav>
+
+    <div class="dashboard-container">
+        <aside class="sidebar">
+            <ul class="sidebar-menu">
+                <li><a href="admin-dashboard.html">📊 Admin Dashboard</a></li>
+                <li><a href="add-train.html">➕ Add Train</a></li>
+                <li><a href="add-station.html" class="active">➕ Add Station</a></li>
+                <li><a href="admin-view-bookings.html">📑 View All Bookings</a></li>
+            </ul>
+        </aside>
+
+        <main class="main-content">
+            <div class="card" style="max-width: 500px; margin: 0 auto;">
+                <div class="card-title">Register New Station</div>
+                <form onsubmit="event.preventDefault(); alert('Station Registered!'); this.reset();">
+                    <div class="form-group">
+                        <label>Station Name</label>
+                        <input type="text" class="form-control" placeholder="e.g. Pune City" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Station Code</label>
+                        <input type="text" class="form-control" placeholder="e.g. PUNE"
+                            style="text-transform: uppercase;" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Region/Zone</label>
+                        <select class="form-control">
+                            <option>Northern Railway</option>
+                            <option>Western Railway</option>
+                            <option>Southern Railway</option>
+                            <option>Eastern Railway</option>
+                        </select>
+                    </div>
+                    <button type="submit" class="btn btn-primary" style="width: 100%;">Save Station</button>
+                </form>
+            </div>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

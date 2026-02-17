@@ -1,0 +1,12 @@
+{
+  "name": "railway-reservation-system",
+  "version": "1.0.0",
+  "description": "Railway Reservation System DBMS Project",
+  "main": "index.html",
+  "scripts": {
+    "dev": "vite"
+  },
+  "devDependencies": {
+    "vite": "^5.0.0"
+  }
+}

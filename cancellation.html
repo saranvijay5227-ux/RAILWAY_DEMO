@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cancel Ticket - RailStream</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <nav>
+        <div class="nav-container">
+            <h2 id="logo"><img src="train.png" alt="Logo"> IRCTC Railway</h2>
+            <div>
+                <a href="user-dashboard.html">Dashboard</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="card">
+            <h2 style="color: #d9534f;">❌ Cancel Ticket</h2>
+            <p style="margin-bottom: 20px;">Enter your Booking ID to process cancellation.</p>
+            <form action="cancel.php" method="POST">
+                <div class="form-group">
+                    <label>Booking ID / PNR</label>
+                    <input type="text" name="booking_id" placeholder="e.g. RS-2026-X12" required>
+                </div>
+                <button type="submit" style="background-color: #d9534f;">Confirm Cancellation</button>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Train - RailStream</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <nav>
+        <div class="nav-container">
+            <h2 id="logo"><img src="train.png" alt="Logo"> IRCTC Railway</h2>
+            <div>
+                <a href="user-dashboard.html">Dashboard</a>
+                <a href="index.html">Logout</a>
+            </div>
+        </div>
+    </nav>
+    <div class="container">
+        <div class="card" style="max-width: 600px;">
+            <h2>🔍 Search Your Train</h2>
+            <form action="search.php" method="GET">
+                <div class="form-group">
+                    <label>Source Station</label>
+                    <select name="source" required>
+                        <option value="">Select Source</option>
+                        <option value="NDLS">New Delhi (NDLS)</option>
+                        <option value="BCT">Mumbai Central (BCT)</option>
+                        <option value="MAS">Chennai Central (MAS)</option>
+                        <option value="HWH">Howrah Junction (HWH)</option>
+                        <option value="SBC">Bangalore City (SBC)</option>
+                        <option value="ADI">Ahmedabad Junction (ADI)</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label>Destination Station</label>
+                    <select name="destination" required>
+                        <option value="">Select Destination</option>
+                        <option value="NDLS">New Delhi (NDLS)</option>
+                        <option value="BCT">Mumbai Central (BCT)</option>
+                        <option value="MAS">Chennai Central (MAS)</option>
+                        <option value="HWH">Howrah Junction (HWH)</option>
+                        <option value="SBC">Bangalore City (SBC)</option>
+                        <option value="ADI">Ahmedabad Junction (ADI)</option>
+                    </select>
+                </div>
+                <button type="submit">Search Trains</button>
+            </form>
+        </div>
+        <div style="margin-top: 50px;">
+            <h3>Available Trains</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Train Name</th>
+                        <th>Available Seats</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Rajdhani Express</td>
+                        <td>45</td>
+                        <td><a href="booking.html" class="submit-btn"
+                                style="text-decoration: none; padding: 5px 15px;">Book</a></td>
+                    </tr>
+                    <tr>
+                        <td>Shatabdi Express</td>
+                        <td>12</td>
+                        <td><a href="booking.html" class="submit-btn"
+                                style="text-decoration: none; padding: 5px 15px;">Book</a></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</body>
+
+</html>

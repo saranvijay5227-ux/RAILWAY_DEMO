@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - RailStream</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <nav>
+        <div class="nav-container">
+            <h2 id="logo"><img src="train.png" alt="Logo"> IRCTC Railway</h2>
+            <div>
+                <a href="index.html">Home</a>
+            </div>
+        </div>
+    </nav>
+    <div class="container">
+        <div class="card">
+            <h2 style="margin-bottom: 20px;">System Login</h2>
+            <form action="login.php" method="POST">
+                <div class="form-group">
+                    <label>Phone Number or Email</label>
+                    <input type="text" name="identifier" placeholder="Enter phone or email" required>
+                </div>
+                <div class="form-group">
+                    <label>Password</label>
+                    <input type="password" name="password" placeholder="Enter your password" required>
+                </div>
+                <p style="font-size: 12px; color: #777; margin-bottom: 15px; text-align: left;">
+                    * Credentials will be verified by server to determine User or Admin access.
+                </p>
+                <button type="submit">Login</button>
+                <a href="register.html" class="submit-btn"
+                    style="display: block; text-decoration: none; margin-top: 10px; background-color: #5bc0de;">Register
+                    New Account</a>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>

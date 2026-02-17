@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Train - RailStream Admin</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <nav>
+        <div class="nav-container">
+            <h2 id="logo"><img src="train.png" alt="Logo"> IRCTC Railway</h2>
+            <div>
+                <a href="admin-dashboard.html">Dashboard</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="card" style="max-width: 600px;">
+            <h2>➕ Add New Train</h2>
+            <form action="add_train.php" method="POST">
+                <div class="form-group">
+                    <label>Train Name</label>
+                    <input type="text" name="train_name" placeholder="e.g. Garib Rath" required>
+                </div>
+                <div class="form-group">
+                    <label>Total Seats</label>
+                    <input type="number" name="total_seats" placeholder="e.g. 500" required>
+                </div>
+                <div class="form-group">
+                    <label>Source Station</label>
+                    <select name="source" required>
+                        <option value="NDLS">New Delhi (NDLS)</option>
+                        <option value="BCT">Mumbai Central (BCT)</option>
+                        <option value="MAS">Chennai Central (MAS)</option>
+                        <option value="HWH">Howrah Junction (HWH)</option>
+                        <option value="SBC">Bangalore City (SBC)</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label>Destination Station</label>
+                    <select name="destination" required>
+                        <option value="NDLS">New Delhi (NDLS)</option>
+                        <option value="BCT">Mumbai Central (BCT)</option>
+                        <option value="MAS">Chennai Central (MAS)</option>
+                        <option value="HWH">Howrah Junction (HWH)</option>
+                        <option value="SBC">Bangalore City (SBC)</option>
+                    </select>
+                </div>
+                <button type="submit">Submit Train</button>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>
